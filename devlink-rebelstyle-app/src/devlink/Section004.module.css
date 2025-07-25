@@ -1,0 +1,47 @@
+.fancy-vertical-section-navigation-with-active-styles--section--example {
+  margin-bottom: 1.5em;
+  padding-top: 8em;
+  padding-bottom: 8em;
+  border-radius: 1em;
+  background-color: var(--fancy-vertical-section-navigation-with-active-styles---linen);
+}
+
+.fancy-vertical-section-navigation-with-active-styles--padding-global {
+  padding-right: 4em;
+  padding-left: 4em;
+}
+
+@media screen and (max-width: 991px) {
+  .fancy-vertical-section-navigation-with-active-styles--padding-global {
+    padding-right: 6vw;
+    padding-left: 6vw;
+  }
+}
+
+.fancy-vertical-section-navigation-with-active-styles--container-w3 {
+  width: 100%;
+  max-width: 51em;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.fancy-vertical-section-navigation-with-active-styles--title4 {
+  font-size: 1.75em;
+  line-height: 1.2em;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 767px) {
+  .fancy-vertical-section-navigation-with-active-styles--title4 {
+    font-size: 1.5em;
+  }
+}
+
+.fancy-vertical-section-navigation-with-active-styles--title4.fancy-vertical-section-navigation-with-active-styles--text-regular {
+  font-weight: 400;
+}
+
+.fancy-vertical-section-navigation-with-active-styles--demo-image {
+  margin-top: 3.5em;
+  margin-bottom: 3.5em;
+}

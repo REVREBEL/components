@@ -1,0 +1,16 @@
+{
+  "scripts": {
+    "builder:gen": "ts-node scripts/generate-builder-registry.ts"
+  },
+  "dependencies": {
+    "@builder.io/react": "^8.2.6",
+    "@builder.io/sdk": "^6.1.2"
+  },
+  "devDependencies": {
+    "@types/node": "^24.1.0",
+    "builder": "^5.0.0",
+    "ts-morph": "^26.0.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
+  }
+}
