@@ -1,10 +1,11 @@
 {
-  "extends": "./tsconfig.json",
+  "extends": "../tsconfig.json",
   "compilerOptions": {
-    "module": "CommonJS",
-    "moduleResolution": "node",
-    "outDir": "dist",
-    "noEmit": false
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "noEmit": false,
+    "outDir": "../dist/scripts"
   },
-  "include": ["scripts"]
+  "include": ["./"]
+  
 }

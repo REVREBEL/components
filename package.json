@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "builder:gen": "ts-node scripts/generate-builder-registry.ts",
+    "builder:gen": "ts-node --project scripts/tsconfig.scripts.json --require tsconfig-paths/register scripts/generate-builder-registry.ts",
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
@@ -26,6 +26,7 @@
     "eslint-config-next": "15.4.4",
     "ts-morph": "^26.0.0",
     "ts-node": "^10.9.2",
+    "tsconfig-paths": "^4.2.0",
     "typescript": "^5.8.3"
   }
 }

@@ -16,7 +16,9 @@
     "baseUrl": ".",
     "outDir": "dist",
     "paths": {
-      "@/*": ["src/*"]
+      "@/*": ["src/*"],
+      "@/devlink": ["src/devlink/components"],
+      "@/devlink/*": ["src/devlink/components/*"]
     },
     "plugins": [
       {

@@ -3,7 +3,11 @@
 import { Section001 } from '@/components/Section001';
 import { PreviewEditModeProvider } from '@/context/PreviewEditModeContext';
 
-export default function Section001Page({ searchParams }) {
+interface Section001PageProps {
+  searchParams?: { [key: string]: string | string[] | undefined };
+}
+
+export default function Section001Page({ searchParams }: Section001PageProps) {
   const mode = searchParams?.mode === 'edit' ? 'edit' : 'preview';
 
   return (
