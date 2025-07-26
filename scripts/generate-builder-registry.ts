@@ -91,11 +91,14 @@ for (const file of files) {
     continue;
   }
 
-  const relativeImport = path
-    .relative(path.dirname(outputFile), file.getFilePath())
-    .replace(/\.[tj]sx?$/, "");
+  const filePathRelativeToComponents = path.relative(componentsDir, file.getFilePath());
+  const registryImportPath = filePathRelativeToComponents
+    .replace(/\.[tj]sx?$/, "") // remove extension
+    .split(path.sep)           // normalize path slashes
+    .join("/");                // force POSIX for alias
 
-  registryLines.push(`import { ${componentName} } from "${relativeImport.startsWith(".") ? relativeImport : "./" + relativeImport}";`);
+  registryLines.push(`import { ${componentName} } from "@/devlink/${registryImportPath}";`);
+
   registryLines.push(`Builder.registerComponent(${componentName}, {`);
   registryLines.push(`  name: "${componentName}",`);
   registryLines.push(`});\n`);
