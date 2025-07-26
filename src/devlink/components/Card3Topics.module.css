@@ -226,9 +226,8 @@
 }
 
 .text-color_secondary {
-  backdrop-filter: blur(5px);
-  text-wrap: balance;
   font-family: var(--_type---fonts--font-subheadlines);
+  text-wrap: balance;
 }
 
 .max-width_large {

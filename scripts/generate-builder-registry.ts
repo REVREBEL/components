@@ -44,13 +44,71 @@ function extractEnumValues(typeNode: ts.TypeNode): string[] | null {
   return null;
 }
 
+
 const project = new Project({ tsConfigFilePath: "tsconfig.json" });
 const componentsDir = path.resolve("src/devlink/components");
 const outputFile = path.resolve("src/builder/registry.ts");
 
-const files = project.addSourceFilesAtPaths(`${componentsDir}/**/*.tsx`);
 const registryLines: string[] = [];
 registryLines.push(`import { Builder } from "@builder.io/react";`);
+
+// ⬅️ MATCH .ts AND .tsx
+
+const files = project.addSourceFilesAtPaths([
+  `${componentsDir}/**/*.ts`,
+  `${componentsDir}/**/*.tsx`,
+  `${componentsDir}/**/*.js`
+]).filter(file => {
+  const filePath = file.getFilePath();
+  return (
+    !filePath.endsWith(".d.ts") &&
+    !filePath.includes("index.js") &&
+    !filePath.includes("devlink.js") &&
+    !filePath.includes("interactions.js")
+  );
+});
+
+console.log(`📦 Matched ${files.length} component files`);
+
+for (const file of files) {
+  let componentSymbol = file.getDefaultExportSymbol();
+  let componentName: string | undefined;
+
+  if (!componentSymbol) {
+    const exports = file.getExportSymbols();
+    componentSymbol = exports.find(s => /^[A-Z]/.test(s.getName())); // find first PascalCase export
+  }
+
+  if (!componentSymbol) {
+    console.log(`⚠️  Skipping ${file.getBaseName()} - no suitable export`);
+    continue;
+  }
+
+  componentName = componentSymbol.getName();
+
+  if (componentName === "default" || !/^[A-Z]/.test(componentName)) {
+    console.log(`⚠️  Skipping ${file.getBaseName()} - invalid component name: ${componentName}`);
+    continue;
+  }
+
+  const relativeImport = path
+    .relative(path.dirname(outputFile), file.getFilePath())
+    .replace(/\.[tj]sx?$/, "");
+
+  registryLines.push(`import { ${componentName} } from "${relativeImport.startsWith(".") ? relativeImport : "./" + relativeImport}";`);
+  registryLines.push(`Builder.registerComponent(${componentName}, {`);
+  registryLines.push(`  name: "${componentName}",`);
+  registryLines.push(`});\n`);
+}
+
+console.log("🛠  Starting Builder.io registry generation...");
+console.log(`📦 Scanning for components in: ${componentsDir}`);
+files.forEach(file => console.log("•", file.getFilePath()));
+
+const componentFiles = project.getSourceFiles();
+
+console.log(`📦 Found ${componentFiles.length} source files`);
+componentFiles.forEach((file) => console.log("•", file.getFilePath()));
 
 for (const file of files) {
   const defaultExport = file.getDefaultExportSymbol();
