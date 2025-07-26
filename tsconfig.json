@@ -17,8 +17,8 @@
     "outDir": "dist",
     "paths": {
       "@/*": ["src/*"],
-      "@/devlink": ["./devlink/components"],
-      "@/devlink/*": ["./devlink/components/*"]
+      "@/devlink": ["src/devlink/components"],
+      "@/devlink/*": ["src/devlink/components/*"]
     },
     "plugins": [
       {

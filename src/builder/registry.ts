@@ -1,260 +1,260 @@
 import { Builder } from "@builder.io/react";
-import { BaseButton } from "../devlink/components/BaseButton";
+import { BaseButton } from "@/devlink/BaseButton";
 Builder.registerComponent(BaseButton, {
   name: "BaseButton",
 });
 
-import { BaseButtonBig } from "../devlink/components/BaseButtonBig";
+import { BaseButtonBig } from "@/devlink/BaseButtonBig";
 Builder.registerComponent(BaseButtonBig, {
   name: "BaseButtonBig",
 });
 
-import { BaseButtonSmall } from "../devlink/components/BaseButtonSmall";
+import { BaseButtonSmall } from "@/devlink/BaseButtonSmall";
 Builder.registerComponent(BaseButtonSmall, {
   name: "BaseButtonSmall",
 });
 
-import { BlogContentFeed } from "../devlink/components/BlogContentFeed";
+import { BlogContentFeed } from "@/devlink/BlogContentFeed";
 Builder.registerComponent(BlogContentFeed, {
   name: "BlogContentFeed",
 });
 
-import { BlogPreview } from "../devlink/components/BlogPreview";
+import { BlogPreview } from "@/devlink/BlogPreview";
 Builder.registerComponent(BlogPreview, {
   name: "BlogPreview",
 });
 
-import { BlogPreview2X2Layout } from "../devlink/components/BlogPreview2X2Layout";
+import { BlogPreview2X2Layout } from "@/devlink/BlogPreview2X2Layout";
 Builder.registerComponent(BlogPreview2X2Layout, {
   name: "BlogPreview2X2Layout",
 });
 
-import { Card3Topics } from "../devlink/components/Card3Topics";
+import { Card3Topics } from "@/devlink/Card3Topics";
 Builder.registerComponent(Card3Topics, {
   name: "Card3Topics",
 });
 
-import { CardSinglePhoto } from "../devlink/components/CardSinglePhoto";
+import { CardSinglePhoto } from "@/devlink/CardSinglePhoto";
 Builder.registerComponent(CardSinglePhoto, {
   name: "CardSinglePhoto",
 });
 
-import { Checkboxes } from "../devlink/components/Checkboxes";
+import { Checkboxes } from "@/devlink/Checkboxes";
 Builder.registerComponent(Checkboxes, {
   name: "Checkboxes",
 });
 
-import { ColorButton } from "../devlink/components/ColorButton";
+import { ColorButton } from "@/devlink/ColorButton";
 Builder.registerComponent(ColorButton, {
   name: "ColorButton",
 });
 
-import { CountryFieldPopulatedList } from "../devlink/components/CountryFieldPopulatedList";
+import { CountryFieldPopulatedList } from "@/devlink/CountryFieldPopulatedList";
 Builder.registerComponent(CountryFieldPopulatedList, {
   name: "CountryFieldPopulatedList",
 });
 
-import { DevLinkProvider } from "../devlink/components/DevLinkProvider";
+import { DevLinkProvider } from "@/devlink/DevLinkProvider";
 Builder.registerComponent(DevLinkProvider, {
   name: "DevLinkProvider",
 });
 
-import { EmailAddressInput } from "../devlink/components/EmailAddressInput";
+import { EmailAddressInput } from "@/devlink/EmailAddressInput";
 Builder.registerComponent(EmailAddressInput, {
   name: "EmailAddressInput",
 });
 
-import { FancyNav } from "../devlink/components/FancyNav";
+import { FancyNav } from "@/devlink/FancyNav";
 Builder.registerComponent(FancyNav, {
   name: "FancyNav",
 });
 
-import { FirstNameInput } from "../devlink/components/FirstNameInput";
+import { FirstNameInput } from "@/devlink/FirstNameInput";
 Builder.registerComponent(FirstNameInput, {
   name: "FirstNameInput",
 });
 
-import { FormsMessageInput } from "../devlink/components/FormsMessageInput";
+import { FormsMessageInput } from "@/devlink/FormsMessageInput";
 Builder.registerComponent(FormsMessageInput, {
   name: "FormsMessageInput",
 });
 
-import { Global } from "../devlink/components/Global";
+import { Global } from "@/devlink/Global";
 Builder.registerComponent(Global, {
   name: "Global",
 });
 
-import { GlobalCodeVerticalSectionNav } from "../devlink/components/GlobalCodeVerticalSectionNav";
+import { GlobalCodeVerticalSectionNav } from "@/devlink/GlobalCodeVerticalSectionNav";
 Builder.registerComponent(GlobalCodeVerticalSectionNav, {
   name: "GlobalCodeVerticalSectionNav",
 });
 
-import { InputSelection } from "../devlink/components/InputSelection";
+import { InputSelection } from "@/devlink/InputSelection";
 Builder.registerComponent(InputSelection, {
   name: "InputSelection",
 });
 
-import { LastNameInput } from "../devlink/components/LastNameInput";
+import { LastNameInput } from "@/devlink/LastNameInput";
 Builder.registerComponent(LastNameInput, {
   name: "LastNameInput",
 });
 
-import { PageLayoutTemplate } from "../devlink/components/PageLayoutTemplate";
+import { PageLayoutTemplate } from "@/devlink/PageLayoutTemplate";
 Builder.registerComponent(PageLayoutTemplate, {
   name: "PageLayoutTemplate",
 });
 
-import { Section001 } from "../devlink/components/Section001";
+import { Section001 } from "@/devlink/Section001";
 Builder.registerComponent(Section001, {
   name: "Section001",
 });
 
-import { Section002 } from "../devlink/components/Section002";
+import { Section002 } from "@/devlink/Section002";
 Builder.registerComponent(Section002, {
   name: "Section002",
 });
 
-import { Section003 } from "../devlink/components/Section003";
+import { Section003 } from "@/devlink/Section003";
 Builder.registerComponent(Section003, {
   name: "Section003",
 });
 
-import { Section004 } from "../devlink/components/Section004";
+import { Section004 } from "@/devlink/Section004";
 Builder.registerComponent(Section004, {
   name: "Section004",
 });
 
-import { Section006 } from "../devlink/components/Section006";
+import { Section006 } from "@/devlink/Section006";
 Builder.registerComponent(Section006, {
   name: "Section006",
 });
 
-import { Section007 } from "../devlink/components/Section007";
+import { Section007 } from "@/devlink/Section007";
 Builder.registerComponent(Section007, {
   name: "Section007",
 });
 
-import { Sg2ColGrid } from "../devlink/components/Sg2ColGrid";
+import { Sg2ColGrid } from "@/devlink/Sg2ColGrid";
 Builder.registerComponent(Sg2ColGrid, {
   name: "Sg2ColGrid",
 });
 
-import { SgGrid2Column3Rows } from "../devlink/components/SgGrid2Column3Rows";
+import { SgGrid2Column3Rows } from "@/devlink/SgGrid2Column3Rows";
 Builder.registerComponent(SgGrid2Column3Rows, {
   name: "SgGrid2Column3Rows",
 });
 
-import { SgGrid2ColumnHorizontal } from "../devlink/components/SgGrid2ColumnHorizontal";
+import { SgGrid2ColumnHorizontal } from "@/devlink/SgGrid2ColumnHorizontal";
 Builder.registerComponent(SgGrid2ColumnHorizontal, {
   name: "SgGrid2ColumnHorizontal",
 });
 
-import { SgGrid2ColumnVertical } from "../devlink/components/SgGrid2ColumnVertical";
+import { SgGrid2ColumnVertical } from "@/devlink/SgGrid2ColumnVertical";
 Builder.registerComponent(SgGrid2ColumnVertical, {
   name: "SgGrid2ColumnVertical",
 });
 
-import { SgHeadlineRow } from "../devlink/components/SgHeadlineRow";
+import { SgHeadlineRow } from "@/devlink/SgHeadlineRow";
 Builder.registerComponent(SgHeadlineRow, {
   name: "SgHeadlineRow",
 });
 
-import { SgSectionHeadline } from "../devlink/components/SgSectionHeadline";
+import { SgSectionHeadline } from "@/devlink/SgSectionHeadline";
 Builder.registerComponent(SgSectionHeadline, {
   name: "SgSectionHeadline",
 });
 
-import { SgSubHeadlineRow } from "../devlink/components/SgSubHeadlineRow";
+import { SgSubHeadlineRow } from "@/devlink/SgSubHeadlineRow";
 Builder.registerComponent(SgSubHeadlineRow, {
   name: "SgSubHeadlineRow",
 });
 
-import { SimpleDatePicker } from "../devlink/components/SimpleDatePicker";
+import { SimpleDatePicker } from "@/devlink/SimpleDatePicker";
 Builder.registerComponent(SimpleDatePicker, {
   name: "SimpleDatePicker",
 });
 
-import { SocialButtons } from "../devlink/components/SocialButtons";
+import { SocialButtons } from "@/devlink/SocialButtons";
 Builder.registerComponent(SocialButtons, {
   name: "SocialButtons",
 });
 
-import { StyleGuideNav } from "../devlink/components/StyleGuideNav";
+import { StyleGuideNav } from "@/devlink/StyleGuideNav";
 Builder.registerComponent(StyleGuideNav, {
   name: "StyleGuideNav",
 });
 
-import { DevLinkContext } from "../devlink/components/devlinkContext";
+import { DevLinkContext } from "@/devlink/devlinkContext";
 Builder.registerComponent(DevLinkContext, {
   name: "DevLinkContext",
 });
 
-import { EASING_FUNCTIONS } from "../devlink/components/utils";
+import { EASING_FUNCTIONS } from "@/devlink/utils";
 Builder.registerComponent(EASING_FUNCTIONS, {
   name: "EASING_FUNCTIONS",
 });
 
-import { BackgroundVideoWrapper } from "../devlink/components/_Builtin/BackgroundVideo";
+import { BackgroundVideoWrapper } from "@/devlink/_Builtin/BackgroundVideo";
 Builder.registerComponent(BackgroundVideoWrapper, {
   name: "BackgroundVideoWrapper",
 });
 
-import { Block } from "../devlink/components/_Builtin/Basic";
+import { Block } from "@/devlink/_Builtin/Basic";
 Builder.registerComponent(Block, {
   name: "Block",
 });
 
-import { DropdownWrapper } from "../devlink/components/_Builtin/Dropdown";
+import { DropdownWrapper } from "@/devlink/_Builtin/Dropdown";
 Builder.registerComponent(DropdownWrapper, {
   name: "DropdownWrapper",
 });
 
-import { Facebook } from "../devlink/components/_Builtin/Facebook";
+import { Facebook } from "@/devlink/_Builtin/Facebook";
 Builder.registerComponent(Facebook, {
   name: "Facebook",
 });
 
-import { FormWrapper } from "../devlink/components/_Builtin/Form";
+import { FormWrapper } from "@/devlink/_Builtin/Form";
 Builder.registerComponent(FormWrapper, {
   name: "FormWrapper",
 });
 
-import { MapWidget } from "../devlink/components/_Builtin/Map";
+import { MapWidget } from "@/devlink/_Builtin/Map";
 Builder.registerComponent(MapWidget, {
   name: "MapWidget",
 });
 
-import { NavbarContext } from "../devlink/components/_Builtin/Navbar";
+import { NavbarContext } from "@/devlink/_Builtin/Navbar";
 Builder.registerComponent(NavbarContext, {
   name: "NavbarContext",
 });
 
-import { SliderContext } from "../devlink/components/_Builtin/Slider";
+import { SliderContext } from "@/devlink/_Builtin/Slider";
 Builder.registerComponent(SliderContext, {
   name: "SliderContext",
 });
 
-import { TabsWrapper } from "../devlink/components/_Builtin/Tabs";
+import { TabsWrapper } from "@/devlink/_Builtin/Tabs";
 Builder.registerComponent(TabsWrapper, {
   name: "TabsWrapper",
 });
 
-import { Twitter } from "../devlink/components/_Builtin/Twitter";
+import { Twitter } from "@/devlink/_Builtin/Twitter";
 Builder.registerComponent(Twitter, {
   name: "Twitter",
 });
 
-import { Heading } from "../devlink/components/_Builtin/Typography";
+import { Heading } from "@/devlink/_Builtin/Typography";
 Builder.registerComponent(Heading, {
   name: "Heading",
 });
 
-import { Video } from "../devlink/components/_Builtin/Video";
+import { Video } from "@/devlink/_Builtin/Video";
 Builder.registerComponent(Video, {
   name: "Video",
 });
 
-import { YouTubeVideo } from "../devlink/components/_Builtin/YouTubeVideo";
+import { YouTubeVideo } from "@/devlink/_Builtin/YouTubeVideo";
 Builder.registerComponent(YouTubeVideo, {
   name: "YouTubeVideo",
 });
