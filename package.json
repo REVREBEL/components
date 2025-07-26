@@ -1,14 +1,29 @@
 {
+  "name": "rebel-style",
+  "version": "0.1.0",
+  "private": true,
   "scripts": {
-    "builder:gen": "ts-node scripts/generate-builder-registry.ts"
+    "builder:gen": "ts-node scripts/generate-builder-registry.ts",
+    "dev": "next dev --turbopack",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
   },
   "dependencies": {
     "@builder.io/react": "^8.2.6",
-    "@builder.io/sdk": "^6.1.2"
+    "@builder.io/sdk": "^6.1.2",
+    "next": "15.4.4",
+    "react": "19.1.0",
+    "react-dom": "19.1.0"
   },
   "devDependencies": {
+    "@eslint/eslintrc": "^3",
     "@types/node": "^24.1.0",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
     "builder": "^5.0.0",
+    "eslint": "^9",
+    "eslint-config-next": "15.4.4",
     "ts-morph": "^26.0.0",
     "ts-node": "^10.9.2",
     "typescript": "^5.8.3"
