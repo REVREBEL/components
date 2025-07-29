@@ -1,3 +1,6 @@
+export const dynamic = 'force-dynamic';
+
+
 import { builder, BuilderComponent, Builder } from '@builder.io/react';
 import { notFound } from 'next/navigation';
 import "@/builder/registry";

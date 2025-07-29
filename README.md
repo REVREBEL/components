@@ -1,8 +1,8 @@
 <!-- @format -->
 
-# REBELstyle components
+# OliveLA components
 
-REVREBEL Component Library using Builder.io, Xano, DevLink, and Webflow
+OliveLA by REVREBEL Component Library using Builder.io, Xano, DevLink, and Webflow
 
 ### ⚙️ Project Tech Stack Overview
 

@@ -1,3 +1,10 @@
+
+
+
+
+console.log("📦 Starting. Registering DevLink components");
+
+
 import { Builder } from "@builder.io/react";
 import { BaseButton } from "@/devlink/BaseButton";
 Builder.registerComponent(BaseButton, {
@@ -13,6 +20,9 @@ import { BaseButtonSmall } from "@/devlink/BaseButtonSmall";
 Builder.registerComponent(BaseButtonSmall, {
   name: "BaseButtonSmall",
 });
+
+
+console.log("✅ BaseButtonSmall registered");
 
 import { BlogContentFeed } from "@/devlink/BlogContentFeed";
 Builder.registerComponent(BlogContentFeed, {
@@ -38,6 +48,9 @@ import { CardSinglePhoto } from "@/devlink/CardSinglePhoto";
 Builder.registerComponent(CardSinglePhoto, {
   name: "CardSinglePhoto",
 });
+
+console.log("✅ CardSinglePhoto registered");
+
 
 import { Checkboxes } from "@/devlink/Checkboxes";
 Builder.registerComponent(Checkboxes, {
@@ -73,6 +86,8 @@ import { FirstNameInput } from "@/devlink/FirstNameInput";
 Builder.registerComponent(FirstNameInput, {
   name: "FirstNameInput",
 });
+
+console.log("✅ FirstNameInput registered");
 
 import { FormsMessageInput } from "@/devlink/FormsMessageInput";
 Builder.registerComponent(FormsMessageInput, {
@@ -123,6 +138,8 @@ import { Section004 } from "@/devlink/Section004";
 Builder.registerComponent(Section004, {
   name: "Section004",
 });
+
+console.log("✅ Section004 registered");
 
 import { Section006 } from "@/devlink/Section006";
 Builder.registerComponent(Section006, {
@@ -208,6 +225,9 @@ import { DropdownWrapper } from "@/devlink/_Builtin/Dropdown";
 Builder.registerComponent(DropdownWrapper, {
   name: "DropdownWrapper",
 });
+
+
+console.log("✅ DropdownWrapper registered");
 
 import { Facebook } from "@/devlink/_Builtin/Facebook";
 Builder.registerComponent(Facebook, {
