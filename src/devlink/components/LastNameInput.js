@@ -6,20 +6,25 @@ import _styles from "./LastNameInput.module.css";
 
 export function LastNameInput({
   as: _Component = _Builtin.FormTextInput,
-  variant = "Light",
   visibility = true,
   id = "lastName-002",
+  variant = "Light",
 }) {
   const _styleVariantMap = {
     Light: "",
-    Dark: "w-variant-b7c2bbd7-3446-75f5-354d-c24f808224eb",
+    Dark: "w-variant-73688e7e-a89b-588e-34aa-f646d4ff1f83",
   };
 
   const _activeStyleVariant = _styleVariantMap[variant];
 
   return visibility ? (
     <_Component
-      className={_utils.cx(_styles, "form_input", _activeStyleVariant)}
+      className={_utils.cx(
+        _styles,
+        "form_input",
+        "is-half-size",
+        _activeStyleVariant
+      )}
       name="lastName"
       maxLength={256}
       data-name="lastName"

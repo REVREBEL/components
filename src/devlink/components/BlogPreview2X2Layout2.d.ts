@@ -1,0 +1,33 @@
+import * as React from "react";
+import * as Types from "./types";
+
+declare function BlogPreview2X2Layout2(props: {
+  as?: React.ElementType;
+  story1ImagePreview1?: Types.Asset.Image;
+  story1ImagePreview1AltText?: Types.Basic.AltText;
+  story1EyebrowStory1?: React.ReactNode;
+  story1StoryHeadline1Tag?: Types.Basic.HeadingTag;
+  story1StoryHeadline1?: React.ReactNode;
+  story1StoryPreviewText1?: React.ReactNode;
+  story2ImagePreview2?: Types.Asset.Image;
+  story2ImagePreview2AltText?: Types.Basic.AltText;
+  story2EyebrowStory2?: React.ReactNode;
+  story2StoryHeadline2Tag?: Types.Basic.HeadingTag;
+  story2StoryHeadline2?: React.ReactNode;
+  story2StoryPreviewText2?: React.ReactNode;
+  story3ImagePreview3?: Types.Asset.Image;
+  story3ImagePreview3AltText?: Types.Basic.AltText;
+  story3EyebrowStory3?: React.ReactNode;
+  story3StoryHeadline3Tag?: Types.Basic.HeadingTag;
+  story3StoryHeadline3?: React.ReactNode;
+  story3StoryPreviewText3?: React.ReactNode;
+  story4ImagePreview4?: Types.Asset.Image;
+  story4ImagePreview4AltText?: Types.Basic.AltText;
+  story4EyebrowStory4?: React.ReactNode;
+  story4StoryHeadline4Tag?: Types.Basic.HeadingTag;
+  story4StoryHeadline4?: React.ReactNode;
+  story4StoryPreviewText4?: React.ReactNode;
+  mainHeadlineMainHeadlineTag?: Types.Basic.HeadingTag;
+  mainHeadlineMainHeadline?: React.ReactNode;
+  mainHeadlineMainHeadlinePreviewText?: React.ReactNode;
+}): React.JSX.Element;

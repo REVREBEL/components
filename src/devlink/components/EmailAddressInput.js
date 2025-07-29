@@ -6,20 +6,26 @@ import _styles from "./EmailAddressInput.module.css";
 
 export function EmailAddressInput({
   as: _Component = _Builtin.FormTextInput,
-  variant = "Light",
   id = "email-002",
   visibility = true,
+  variant = "Light",
 }) {
   const _styleVariantMap = {
     Light: "",
-    Dark: "w-variant-4f88d91f-893f-bbae-04e6-912148268bfc",
+    Dark: "w-variant-445d7a8a-d93a-6a23-1b39-59eb9d969a2c",
   };
 
   const _activeStyleVariant = _styleVariantMap[variant];
 
   return visibility ? (
     <_Component
-      className={_utils.cx(_styles, "form_input", _activeStyleVariant)}
+      className={_utils.cx(
+        _styles,
+        "form_input",
+        "is-half-size",
+        "is-email",
+        _activeStyleVariant
+      )}
       name="email"
       maxLength={256}
       data-name="email"

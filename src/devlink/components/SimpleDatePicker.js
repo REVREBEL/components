@@ -14,7 +14,7 @@ export function SimpleDatePicker({
   datePickerVisible = true,
 }) {
   return (
-    <_Component className={_utils.cx(_styles, "form-div", "card")} tag="div">
+    <_Component className={_utils.cx(_styles, "form-div", "card-2")} tag="div">
       <_Builtin.FormWrapper
         className={_utils.cx(_styles, "simple-date_form-block")}
       >
@@ -26,7 +26,7 @@ export function SimpleDatePicker({
           id="email-form"
         >
           <_Builtin.FormTextInput
-            className={_utils.cx(_styles, "input_field")}
+            className={_utils.cx(_styles, "input_field-3")}
             name="name"
             maxLength={256}
             data-name="Name"
@@ -39,7 +39,7 @@ export function SimpleDatePicker({
           />
           {datePickerVisible ? (
             <_Builtin.FormTextInput
-              className={_utils.cx(_styles, "input_field")}
+              className={_utils.cx(_styles, "input_field-3")}
               name="Date"
               maxLength={256}
               data-name="Date"

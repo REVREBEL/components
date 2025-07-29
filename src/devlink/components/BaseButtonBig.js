@@ -6,7 +6,6 @@ import _styles from "./BaseButtonBig.module.css";
 
 export function BaseButtonBig({
   as: _Component = _Builtin.Link,
-  colorStyleButtonSettings = "Normal",
   id,
   visibility = true,
 
@@ -15,11 +14,12 @@ export function BaseButtonBig({
   },
 
   buttonLabel = "[ Big ]",
+  colorStyleButtonSettings = "Normal",
 }) {
   const _styleVariantMap = {
     Normal: "",
-    Outline: "w-variant-bd80cf00-417f-11de-9770-26645f0192ef",
-    Inverse: "w-variant-bd80cf00-417f-11de-9770-26645f0192f0",
+    Outline: "w-variant-340422ef-294a-fa5e-e218-78ff4f52b964",
+    Inverse: "w-variant-340422ef-294a-fa5e-e218-78ff4f52b965",
   };
 
   const _activeStyleVariant = _styleVariantMap[colorStyleButtonSettings];
@@ -29,7 +29,7 @@ export function BaseButtonBig({
       className={_utils.cx(
         _styles,
         "",
-        "button",
+        "button-5",
         "is-big",
         _activeStyleVariant
       )}

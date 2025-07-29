@@ -1,0 +1,48 @@
+.barcode-grid {
+  position: relative;
+
+  padding: 1.875rem;
+  justify-items: stretch;
+  align-items: center;
+  grid-template-columns: 1fr 0.75fr 0.75fr 1fr;
+  grid-template-rows: auto;
+
+  border-radius: 0.375rem;
+
+  background-color: var(--_base-2---colors--blue\<deleted\|variable-446cd304-dba7-9ef9-ca11-e2c678c3f5dd\>);
+
+  font-family: Khand;
+  font-size: 1.125rem;
+  line-height: 0.0875rem;
+  font-weight: 700;
+}
+
+.image-82 {
+  max-width: 100%;
+}
+
+.barcode-headline {
+  color: var(--_base-2---colors--white\<deleted\|variable-00905a82-c942-2011-5241-1920d87902c4\>);
+  line-height: 1.4;
+}
+
+.barcode-textblock {
+  color: var(--_base-2---colors--white\<deleted\|variable-00905a82-c942-2011-5241-1920d87902c4\>);
+  font-size: 0.875rem;
+  line-height: 1.4;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+#w-node-_803f513c-4a5a-3633-dbd2-50acf2d398bb-f2d398b8 {
+  grid-column-start: span 1;
+  grid-column-end: span 1;
+  grid-row-start: span 1;
+  grid-row-end: span 1;
+}
+#w-node-_803f513c-4a5a-3633-dbd2-50acf2d398c3-f2d398b8 {
+  grid-column-start: span 1;
+  grid-column-end: span 1;
+  grid-row-start: span 1;
+  grid-row-end: span 1;
+}

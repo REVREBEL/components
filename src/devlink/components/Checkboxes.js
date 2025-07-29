@@ -6,7 +6,6 @@ import _styles from "./Checkboxes.module.css";
 
 export function Checkboxes({
   as: _Component = _Builtin.Block,
-  checkboxStyleCheckboxStyle = "Light",
   checkboxIDsIdCheckboxLabel1,
   checkboxIDsIdCheckboxLabel4,
   checkboxLabelsCheckbox1Label = "Choice 1",
@@ -23,10 +22,11 @@ export function Checkboxes({
   checkboxLabelVisibleCheckbox3LabelVisible = true,
   checkboxLabelVisibleCheckbox4LabelVisible = true,
   checkboxLabelsCheckbox4Label = "Choice 4",
+  checkboxStyleCheckboxStyle = "Light",
 }) {
   const _styleVariantMap = {
     Light: "",
-    Dark: "w-variant-abde65a5-827b-2954-bfe9-bebdfbfec6a3",
+    Dark: "w-variant-158076b4-16ab-af99-f0e8-ce036a695364",
   };
 
   const _activeStyleVariant = _styleVariantMap[checkboxStyleCheckboxStyle];
@@ -35,7 +35,7 @@ export function Checkboxes({
     <_Component
       className={_utils.cx(
         _styles,
-        "forms_checkbox-flex-wrapper",
+        "forms_checkbox-flex-wrapper-2",
         _activeStyleVariant
       )}
       tag="div"
@@ -43,17 +43,21 @@ export function Checkboxes({
       <_Builtin.FormCheckboxWrapper
         className={_utils.cx(
           _styles,
-          "form_checkbox-wrapper",
+          "form_checkbox-wrapper-2",
           _activeStyleVariant
         )}
         id={_utils.cx(
           _styles,
-          "w-node-_0d55cd71-cadc-6e6b-e192-afe4ba4ac4c2-ba4ac4c1"
+          "w-node-_7d98e0d3-4bdd-657a-3328-686165cfd347-65cfd346"
         )}
       >
         {checkboxesVisibleCheckbox1Visible ? (
           <_Builtin.FormCheckboxInput
-            className={_utils.cx(_styles, "form_checkbox", _activeStyleVariant)}
+            className={_utils.cx(
+              _styles,
+              "form_checkbox-2",
+              _activeStyleVariant
+            )}
             type="checkbox"
             name="Checkbox-1"
             data-name="Checkbox 1"
@@ -70,7 +74,7 @@ export function Checkboxes({
         ) : null}
         {checkboxLabelVisibleCheckbox1LabelVisible ? (
           <_Builtin.FormInlineLabel
-            className={_utils.cx(_styles, "form_label", _activeStyleVariant)}
+            className={_utils.cx(_styles, "form_label-2", _activeStyleVariant)}
             htmlFor="checkbox-6"
             id={checkboxIDsIdCheckboxLabel1}
           >
@@ -81,17 +85,21 @@ export function Checkboxes({
       <_Builtin.FormCheckboxWrapper
         className={_utils.cx(
           _styles,
-          "form_checkbox-wrapper",
+          "form_checkbox-wrapper-2",
           _activeStyleVariant
         )}
         id={_utils.cx(
           _styles,
-          "w-node-_0d55cd71-cadc-6e6b-e192-afe4ba4ac4c6-ba4ac4c1"
+          "w-node-_7d98e0d3-4bdd-657a-3328-686165cfd34a-65cfd346"
         )}
       >
         {checkboxesVisibleCheckbox3Visible ? (
           <_Builtin.FormCheckboxInput
-            className={_utils.cx(_styles, "form_checkbox", _activeStyleVariant)}
+            className={_utils.cx(
+              _styles,
+              "form_checkbox-2",
+              _activeStyleVariant
+            )}
             type="checkbox"
             name="Checkbox-3"
             data-name="Checkbox 3"
@@ -108,7 +116,7 @@ export function Checkboxes({
         ) : null}
         {checkboxLabelVisibleCheckbox3LabelVisible ? (
           <_Builtin.FormInlineLabel
-            className={_utils.cx(_styles, "form_label", _activeStyleVariant)}
+            className={_utils.cx(_styles, "form_label-2", _activeStyleVariant)}
             htmlFor="checkbox-6"
             id={checkboxIDsIdCheckboxLabel3}
           >
@@ -119,17 +127,21 @@ export function Checkboxes({
       <_Builtin.FormCheckboxWrapper
         className={_utils.cx(
           _styles,
-          "form_checkbox-wrapper",
+          "form_checkbox-wrapper-2",
           _activeStyleVariant
         )}
         id={_utils.cx(
           _styles,
-          "w-node-_0d55cd71-cadc-6e6b-e192-afe4ba4ac4ca-ba4ac4c1"
+          "w-node-_7d98e0d3-4bdd-657a-3328-686165cfd34d-65cfd346"
         )}
       >
         {checkboxesVisibleCheckbox2Visible ? (
           <_Builtin.FormCheckboxInput
-            className={_utils.cx(_styles, "form_checkbox", _activeStyleVariant)}
+            className={_utils.cx(
+              _styles,
+              "form_checkbox-2",
+              _activeStyleVariant
+            )}
             type="checkbox"
             name="Checkbox-2"
             data-name="Checkbox 2"
@@ -146,7 +158,7 @@ export function Checkboxes({
         ) : null}
         {checkboxLabelVisibleCheckbox2LabelVisible ? (
           <_Builtin.FormInlineLabel
-            className={_utils.cx(_styles, "form_label", _activeStyleVariant)}
+            className={_utils.cx(_styles, "form_label-2", _activeStyleVariant)}
             htmlFor="checkbox-6"
             id={checkboxIDsIdCheckboxLabel2}
           >
@@ -157,17 +169,21 @@ export function Checkboxes({
       <_Builtin.FormCheckboxWrapper
         className={_utils.cx(
           _styles,
-          "form_checkbox-wrapper",
+          "form_checkbox-wrapper-2",
           _activeStyleVariant
         )}
         id={_utils.cx(
           _styles,
-          "w-node-_0d55cd71-cadc-6e6b-e192-afe4ba4ac4ce-ba4ac4c1"
+          "w-node-_7d98e0d3-4bdd-657a-3328-686165cfd350-65cfd346"
         )}
       >
         {checkboxesVisibleCheckbox4Visible ? (
           <_Builtin.FormCheckboxInput
-            className={_utils.cx(_styles, "form_checkbox", _activeStyleVariant)}
+            className={_utils.cx(
+              _styles,
+              "form_checkbox-2",
+              _activeStyleVariant
+            )}
             type="checkbox"
             name="Checkbox-4"
             data-name="Checkbox 4"
@@ -184,7 +200,7 @@ export function Checkboxes({
         ) : null}
         {checkboxLabelVisibleCheckbox4LabelVisible ? (
           <_Builtin.FormInlineLabel
-            className={_utils.cx(_styles, "form_label", _activeStyleVariant)}
+            className={_utils.cx(_styles, "form_label-2", _activeStyleVariant)}
             htmlFor="checkbox-6"
             id={checkboxIDsIdCheckboxLabel4}
           >

@@ -3,7 +3,6 @@ import * as Types from "./types";
 
 declare function Checkboxes(props: {
   as?: React.ElementType;
-  checkboxStyleCheckboxStyle?: "Light" | "Dark";
   checkboxIDsIdCheckboxLabel1?: Types.Basic.IdTextInput;
   checkboxIDsIdCheckboxLabel4?: Types.Basic.IdTextInput;
   checkboxLabelsCheckbox1Label?: React.ReactNode;
@@ -20,4 +19,5 @@ declare function Checkboxes(props: {
   checkboxLabelVisibleCheckbox3LabelVisible?: Types.Visibility.VisibilityConditions;
   checkboxLabelVisibleCheckbox4LabelVisible?: Types.Visibility.VisibilityConditions;
   checkboxLabelsCheckbox4Label?: React.ReactNode;
+  checkboxStyleCheckboxStyle?: "Light" | "Dark";
 }): React.JSX.Element;

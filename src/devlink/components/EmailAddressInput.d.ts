@@ -3,7 +3,7 @@ import * as Types from "./types";
 
 declare function EmailAddressInput(props: {
   as?: React.ElementType;
-  variant?: "Light" | "Dark";
   id?: Types.Basic.IdTextInput;
   visibility?: Types.Visibility.VisibilityConditions;
+  variant?: "Light" | "Dark";
 }): React.JSX.Element;

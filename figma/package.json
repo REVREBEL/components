@@ -1,0 +1,14 @@
+{
+  "name": "figma-token-sync",
+  "version": "1.0.0",
+  "description": "Export Webflow variables and convert to Tokens Studio format for Figma.",
+  "main": "webflow-to-figma-tokens.js",
+  "scripts": {
+    "sync": "node webflow-to-figma-tokens.js"
+  },
+  "type": "module",
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "node-fetch": "^3.3.2"
+  }
+}

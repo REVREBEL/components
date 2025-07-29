@@ -18,8 +18,8 @@ export function BaseButtonSmall({
 }) {
   const _styleVariantMap = {
     Normal: "",
-    Outline: "w-variant-94e45a2b-d9f3-fdc9-af2d-434b3a56792c",
-    Inverse: "w-variant-94e45a2b-d9f3-fdc9-af2d-434b3a56792d",
+    Outline: "w-variant-0c8ca6dd-5aeb-bc9c-8576-fa16fb400d30",
+    Inverse: "w-variant-0c8ca6dd-5aeb-bc9c-8576-fa16fb400d31",
   };
 
   const _activeStyleVariant = _styleVariantMap[colorStyleButtonSettings];
@@ -29,7 +29,7 @@ export function BaseButtonSmall({
       className={_utils.cx(
         _styles,
         "",
-        "button",
+        "button-4",
         "is-small",
         _activeStyleVariant
       )}

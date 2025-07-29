@@ -10,7 +10,7 @@ export function InputSelection({
 }) {
   const _styleVariantMap = {
     Light: "",
-    Dark: "w-variant-07b4a10b-0334-be91-3e4e-b34ddf72a9ec",
+    Dark: "w-variant-2f27eac2-433b-39c3-8dca-cb67eae41e25",
   };
 
   const _activeStyleVariant = _styleVariantMap[variant];

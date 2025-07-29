@@ -1,0 +1,175 @@
+.card_body_small {
+  position: relative;
+  z-index: 1;
+
+  display: flex;
+  padding-top: 0rem;
+  padding-right: 0rem;
+  padding-bottom: 0rem;
+  padding-left: 0rem;
+  flex-direction: column;
+  flex-wrap: nowrap;
+
+  color: inherit;
+  background-clip: border-box;
+  -webkit-text-fill-color: inherit;
+
+  object-fit: cover;
+}
+
+@media screen and (max-width: 991px) {
+  .card_body_small {
+    padding: 2rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .card_body_small {
+    padding: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .card_body_small {
+    padding: 1.5rem;
+  }
+}
+
+.ratio_3x2 {
+  position: relative;
+  aspect-ratio: 3/2;
+}
+
+.image {
+  width: 100%;
+  border-radius: 0.25rem;
+  object-fit: contain;
+}
+
+.image.image_cover {
+  aspect-ratio: 16/9;
+  border-radius: 0.3rem;
+  object-fit: cover;
+}
+
+.image_cover {
+  overflow: hidden;
+
+  box-sizing: border-box;
+
+  width: 100%;
+  height: 100%;
+
+  border-radius: 0.25rem 0.25rem 0rem 0px;
+
+  transition: transform 800ms ease,opacity 200ms ease;
+
+  object-fit: cover;
+}
+
+.image_cover:hover {
+  opacity: 0.95;
+  filter: brightness(95%);
+  transform: scale(1.05);
+}
+
+.heading-8 {
+  font-size: 2rem;
+  line-height: 0.9;
+}
+
+.paragraph {
+  display: block;
+  line-height: var(--text-height-x1-5);
+  text-wrap: balance;
+}
+
+.paragraph:where(.w-variant-d0f9c776-10d9-d203-69a3-7bb66a800502) {
+  display: block;
+}
+
+.paragraph.margin_bottom-none {
+  display: block;
+}
+
+@media screen and (max-width: 479px) {
+  .paragraph.margin_bottom-none {
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+}
+
+.margin_bottom-none {
+  color: var(--core-colors--core-color-blue);
+}
+
+.paragraph.margin-bottom_large {
+  margin-bottom: 4rem;
+  color: var(--core-colors--color2-green);
+}
+
+.button-group {
+  display: flex;
+  margin-top: 2rem;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  align-items: center;
+  grid-column-gap: 0.5rem;
+  grid-row-gap: 0.5rem;
+}
+
+@media screen and (max-width: 479px) {
+  .button-group {
+    width: 100%;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    align-items: stretch;
+  }
+}
+
+.text-button {
+  display: inline-flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex: 0 0 auto;
+  grid-column-gap: 0.5em;
+  grid-row-gap: 0.5em;
+
+  transition: all 200ms ease-in-out;
+
+  font-family: var(--_buttons---all-buttons--btn-font);
+  color: var(--_colors---text--text-blue);
+  font-size: var(--_buttons-2---base-buttons--btn-text-size\<deleted\|variable-f854a320-0633-44a6-2689-59123b17da1b\>);
+  font-weight: var(--_buttons---base-buttons--btn-text-weight);
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.text-button:hover {
+  grid-column-gap: 0.7em;
+  grid-row-gap: 0.7em;
+  color: #5e606e;
+}
+
+.text-button.on-inverse {
+  color: white;
+}
+
+.text-button.on-inverse:hover {
+  opacity: 0.7;
+}
+
+.text-button.on-accent-primary {
+  color: inherit;
+}
+
+.text-button.on-accent-primary:hover {
+  opacity: 0.6;
+  color: inherit;
+}
+
+.display_inline-block {
+  display: inline-block;
+  font-family: var(--_buttons---all-buttons--btn-font);
+}
