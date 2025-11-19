@@ -26,7 +26,7 @@
     "builder": "^5.0.0",
     "eslint": "^9",
     "eslint-config-next": "15.4.4",
-    "ts-morph": "^26.0.0",
+    "ts-morph": "^27.0.0",
     "ts-node": "^10.9.2",
     "tsconfig-paths": "^4.2.0",
     "typescript": "^5.8.3"
